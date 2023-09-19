@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Online Quiz Application</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Online Quiz Application</h1>
+    <p>Instructions:</p>
+    <ul>
+      <li>You will be presented with a series of multiple choice questions.</li>
+      <li>Select the best answer and click the "Submit" button.</li>
+      <li>You will have a limited amount of time to complete the quiz.</li>
+    </ul>
+    <form action="/submit" method="post">
+      <ol>
+        <li>What is the capital of France?</li>
+        <ul>
+          <li><input type="radio" name="q1" value="Paris"> Paris</li>
+          <li><input type="radio" name="q1" value="London"> London</li>
+          <li><input type="radio" name="q1" value="Rome"> Rome</li>
+        </ul>
+        <li>What is the square root of 144?</li>
+        <ul>
+          <li><input type="radio" name="q2" value="12"> 12</li>
+          <li><input type="radio" name="q2" value="13"> 13</li>
+          <li><input type="radio" name="q2" value="14"> 14</li>
+        </ul>
+        <li>What is the next letter in the sequence A, B, C, D, ...?</li>
+        <ul>
+          <li><input type="radio" name="q3" value="E"> E</li>
+          <li><input type="radio" name="q3" value="F"> F</li>
+          <li><input type="radio" name="q3" value="G"> G</li>
+        </ul>
+      </ol>
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+</body>
+</html>
