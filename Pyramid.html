@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head> </head>
+  <body></body>
+  <script>
+    for(let i=1;i<=10;i++){
+    for(let sp=1; sp<=(10-i); sp++) {
+    document.write('&nbsp;&nbsp;&nbsp;');
+    }
+    for(let j=0;j<2*i-1;j++) {
+    if (i%2==0) {
+    document.write ('<span style ="color:red;">*</span> ');
+    }
+    else{
+    document.write ('<span style ="color:green;">*</span> ');
+    }
+    }
+    document.write("<br/>");
+}
+  </script>
+</html>
